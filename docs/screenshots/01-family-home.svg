@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="640" viewBox="0 0 920 640">
+  <rect width="920" height="640" fill="#F6F1E7" />
+
+  <!-- Top Brand Header -->
+  <circle cx="54" cy="40" r="6" fill="#1F4D45" />
+  <text x="68" y="46" font-family="Georgia, serif" font-size="20" font-weight="600" fill="#14231F">closeBy</text>
+  <text x="148" y="45" font-family="monospace" font-size="11" letter-spacing="1.2" fill="rgba(20,35,31,0.5)">BHOPAL</text>
+  <rect x="650" y="24" width="110" height="28" rx="14" fill="#1F4D45" />
+  <text x="705" y="42" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#FFFDF8" text-anchor="middle">Parent diary</text>
+  <rect x="770" y="24" width="106" height="28" rx="14" fill="#FFFDF8" stroke="rgba(20,35,31,0.14)" />
+  <text x="823" y="42" font-family="system-ui, sans-serif" font-size="12" fill="rgba(20,35,31,0.7)" text-anchor="middle">Access log</text>
+  <line x1="44" y1="68" x2="876" y2="68" stroke="rgba(20,35,31,0.10)" />
+
+  <!-- Emergency 108/112 Strip -->
+  <rect x="44" y="82" width="832" height="36" rx="12" fill="rgba(196,69,45,0.10)" stroke="rgba(196,69,45,0.28)" />
+  <text x="62" y="105" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#C4452D">In an emergency, call 108 or 112</text>
+
+  <!-- Left Column: Parent Hero + Sparklines -->
+  <text x="44" y="148" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="rgba(20,35,31,0.5)">PARENT CARE DIARY · BHOPAL</text>
+  <text x="44" y="184" font-family="Georgia, serif" font-size="32" font-weight="600" fill="#14231F">Smt. Meera Sharma</text>
+  <text x="44" y="206" font-family="system-ui, sans-serif" font-size="13" fill="rgba(20,35,31,0.7)">68 yrs · Arera Colony, Bhopal</text>
+  <rect x="234" y="191" width="218" height="22" rx="11" fill="#EFE8DA" stroke="rgba(20,35,31,0.10)" />
+  <text x="343" y="206" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="rgba(20,35,31,0.75)" text-anchor="middle">Consent recorded · 18 Sep 2026</text>
+
+  <!-- Hero Last Visit Summary Sheet -->
+  <rect x="44" y="226" width="460" height="106" rx="14" fill="#FFFDF8" stroke="rgba(20,35,31,0.22)" />
+  <text x="64" y="250" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1.1" fill="rgba(20,35,31,0.5)">LATEST OBSERVATION SUMMARY</text>
+  <text x="484" y="250" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1F4D45" text-anchor="end">Open slip →</text>
+  <text x="64" y="284" font-family="Georgia, serif" font-size="22" font-weight="600" fill="#1F4D45">Last visit Tue: BP 128/82, sugar 104</text>
+  <text x="64" y="312" font-family="system-ui, sans-serif" font-size="13" fill="rgba(20,35,31,0.7)">Recorded by Nurse Sunita Verma · Verified by Lakeview Homecare Clinic</text>
+
+  <!-- Primary + Simulate Visit Buttons -->
+  <rect x="44" y="348" width="184" height="42" rx="14" fill="#1F4D45" />
+  <text x="136" y="374" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#FFFDF8" text-anchor="middle">Request home visit</text>
+  <rect x="240" y="348" width="154" height="42" rx="14" fill="#FFFDF8" stroke="rgba(20,35,31,0.22)" />
+  <text x="317" y="374" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#14231F" text-anchor="middle">Simulate visit</text>
+
+  <!-- BP & Blood Sugar Trend Sparklines -->
+  <rect x="44" y="410" width="222" height="196" rx="14" fill="#FFFDF8" stroke="rgba(20,35,31,0.10)" />
+  <text x="62" y="434" font-family="system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="1.1" fill="rgba(20,35,31,0.5)">BLOOD PRESSURE TREND</text>
+  <text x="62" y="460" font-family="monospace" font-size="20" font-weight="600" fill="#14231F">128/82</text>
+  <text x="142" y="460" font-family="monospace" font-size="12" fill="rgba(20,35,31,0.55)">mmHg</text>
+  <path d="M 64 510 L 100 516 L 136 525 L 172 530 L 208 534 L 244 528" fill="none" stroke="#1F4D45" stroke-width="2.2" />
+  <path d="M 64 552 L 100 556 L 136 560 L 172 560 L 208 564 L 244 560" fill="none" stroke="rgba(20,35,31,0.45)" stroke-width="1.6" stroke-dasharray="4 3" />
+  <circle cx="244" cy="528" r="4" fill="#1F4D45" />
+  <text x="64" y="500" font-family="monospace" font-size="10" fill="#1F4D45">Sys 136</text>
+  <text x="244" y="518" font-family="monospace" font-size="10" font-weight="600" fill="#1F4D45" text-anchor="end">128</text>
+  <text x="244" y="576" font-family="monospace" font-size="10" fill="rgba(20,35,31,0.6)" text-anchor="end">Dia 82</text>
+  <text x="64" y="594" font-family="monospace" font-size="10" fill="rgba(20,35,31,0.5)">22 Sep</text>
+  <text x="244" y="594" font-family="monospace" font-size="10" fill="rgba(20,35,31,0.5)" text-anchor="end">12 Nov</text>
+
+  <rect x="282" y="410" width="222" height="196" rx="14" fill="#FFFDF8" stroke="rgba(20,35,31,0.10)" />
+  <text x="300" y="434" font-family="system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="1.1" fill="rgba(20,35,31,0.5)">BLOOD SUGAR TREND</text>
+  <text x="300" y="460" font-family="monospace" font-size="20" font-weight="600" fill="#14231F">104</text>
+  <text x="346" y="460" font-family="monospace" font-size="12" fill="rgba(20,35,31,0.55)">mg/dL · Fasting</text>
+  <path d="M 302 510 L 338 524 L 374 534 L 410 546 L 446 552 L 482 558" fill="none" stroke="#14231F" stroke-width="2.2" />
+  <circle cx="482" cy="558" r="4" fill="#1F4D45" />
+  <text x="302" y="500" font-family="monospace" font-size="10" fill="rgba(20,35,31,0.7)">122</text>
+  <text x="482" y="546" font-family="monospace" font-size="10" font-weight="600" fill="#1F4D45" text-anchor="end">104 mg/dL</text>
+  <text x="302" y="594" font-family="monospace" font-size="10" fill="rgba(20,35,31,0.5)">22 Sep</text>
+  <text x="482" y="594" font-family="monospace" font-size="10" fill="rgba(20,35,31,0.5)" text-anchor="end">12 Nov</text>
+
+  <!-- Right Column: Vertical 4-Stage Visit Tracker -->
+  <rect x="526" y="138" width="350" height="468" rx="14" fill="#FFFDF8" stroke="rgba(20,35,31,0.12)" />
+  <text x="550" y="166" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1.1" fill="rgba(20,35,31,0.5)">LIVE VISIT PROGRESS</text>
+  <text x="550" y="194" font-family="Georgia, serif" font-size="22" font-weight="600" fill="#14231F">Home vitals check</text>
+  <rect x="760" y="172" width="96" height="24" rx="12" fill="rgba(232,163,23,0.18)" stroke="rgba(232,163,23,0.45)" />
+  <text x="808" y="188" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#7A5100" text-anchor="middle">In progress</text>
+  <line x1="550" y1="212" x2="852" y2="212" stroke="rgba(20,35,31,0.10)" />
+
+  <!-- Stage 1: Requested -->
+  <circle cx="566" cy="242" r="10" fill="#1F4D45" />
+  <line x1="566" y1="254" x2="566" y2="306" stroke="#1F4D45" stroke-width="1.2" />
+  <text x="590" y="246" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#14231F">Requested</text>
+  <text x="852" y="246" font-family="monospace" font-size="11" fill="rgba(20,35,31,0.5)" text-anchor="end">08:15 AM</text>
+  <text x="590" y="266" font-family="system-ui, sans-serif" font-size="13" fill="rgba(20,35,31,0.7)">Booked with Lakeview Homecare Clinic.</text>
+
+  <!-- Stage 2: Assigned + Verified Stamp -->
+  <circle cx="566" cy="316" r="10" fill="#1F4D45" />
+  <line x1="566" y1="328" x2="566" y2="438" stroke="#1F4D45" stroke-width="1.2" />
+  <text x="590" y="320" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#14231F">Assigned</text>
+  <text x="852" y="320" font-family="monospace" font-size="11" fill="rgba(20,35,31,0.5)" text-anchor="end">08:40 AM</text>
+  <rect x="590" y="332" width="262" height="74" rx="12" fill="#F6F1E7" stroke="rgba(20,35,31,0.10)" />
+  <text x="606" y="355" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#14231F">Nurse Sunita Verma · Registered Nurse</text>
+  <rect x="606" y="368" width="224" height="26" rx="13" fill="rgba(31,77,69,0.10)" stroke="rgba(31,77,69,0.28)" />
+  <text x="718" y="385" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1F4D45" text-anchor="middle">Verified by Lakeview Homecare Clinic</text>
+
+  <!-- Stage 3: In progress (single Marigold pulse) -->
+  <circle cx="566" cy="450" r="17" fill="rgba(232,163,23,0.22)" />
+  <circle cx="566" cy="450" r="10" fill="#FFFDF8" stroke="#E8A317" stroke-width="2.2" />
+  <circle cx="566" cy="450" r="4" fill="#E8A317" />
+  <line x1="566" y1="464" x2="566" y2="522" stroke="rgba(20,35,31,0.16)" stroke-width="1.2" />
+  <text x="590" y="454" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#14231F">In progress</text>
+  <text x="852" y="454" font-family="monospace" font-size="11" fill="rgba(20,35,31,0.5)" text-anchor="end">10:05 AM</text>
+  <text x="590" y="474" font-family="system-ui, sans-serif" font-size="13" fill="rgba(20,35,31,0.7)">Staff member is at Smt. Meera Sharma’s</text>
+  <text x="590" y="492" font-family="system-ui, sans-serif" font-size="13" fill="rgba(20,35,31,0.7)">home recording today’s readings.</text>
+
+  <!-- Stage 4: Completed -->
+  <circle cx="566" cy="534" r="10" fill="#F6F1E7" stroke="rgba(20,35,31,0.24)" />
+  <text x="590" y="538" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="rgba(20,35,31,0.48)">Completed</text>
+  <text x="590" y="558" font-family="system-ui, sans-serif" font-size="13" fill="rgba(20,35,31,0.48)">Printed observation slip will publish here.</text>
+</svg>

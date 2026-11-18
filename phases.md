@@ -17,12 +17,12 @@ Stand up the Spring Boot (Java 21) + PostgreSQL backend, Flyway database schema,
 - [x] Implement Clinic Admin endpoints: view/update own clinic profile, add/list/toggle verified clinic staff (`"Verified by <Clinic>"`), blocked if clinic is not `APPROVED`.
 - [x] Add Swagger/OpenAPI docs (`/swagger-ui.html`, `/v3/api-docs`) and integration tests for auth, RBAC, and cross-clinic staff isolation.
 
-### Frontend Deliverables (Expo + Expo Web)
-- Initialize Expo (TypeScript) project configured for mobile and **Expo Web**.
-- Build typed API client, JWT auth context (cross-platform storage), and role-based route guards.
-- Build Auth screens: Login, Family Register, Clinic Register.
-- Build **Platform Admin (Expo Web)** dashboard: clinic list with status filter tabs and Approve / Reject / Suspend actions.
-- Build **Clinic Admin (Expo Web)** screens: clinic status banner (pending/approved/suspended), profile editor, and staff management list displaying **`Verified by <Clinic>`**.
+### Frontend Deliverables (Expo + Expo Web) — ✅ Complete (`tsc --noEmit`: 0 errors; Expo Web export verified)
+- [x] Initialize Expo (SDK 58, TypeScript) project configured for mobile and **Expo Web**.
+- [x] Build typed API client, JWT auth context (cross-platform storage), and role-based route routing.
+- [x] Build Auth screens: Login, Family Register, Clinic Register.
+- [x] Build **Platform Admin (Expo Web)** dashboard: clinic list with status filter tabs, Approve / Reject / Suspend actions, and direct-labeled analytics charts (visits per week, average time-to-assign, repeat bookings, clinics by status).
+- [x] Build **Clinic Admin (Expo Web)** screens: clinic status banner (pending/approved/suspended), profile editor, and staff management list displaying **`Verified by <Clinic>`**.
 
 ### Testable Milestone (Exit Criteria)
 - A clinic registers via UI -> appears as `PENDING` on Platform Admin Expo Web -> Platform Admin approves it -> Clinic Admin logs in and adds a staff member who displays `"Verified by <Clinic>"`.
@@ -46,10 +46,10 @@ Deliver the complete visit booking and execution lifecycle across Family, Clinic
   - Family or Clinic Admin cancels visit from `REQUESTED` or `ASSIGNED` (`-> CANCELLED`).
 - [x] Add comprehensive integration tests for parent consent validation, illegal status transitions, family data isolation, and clinic data isolation (HTTP + service layer).
 
-### Frontend Deliverables
-- **Family screens:** Parent list & Add Parent form (with explicit consent checkbox and visible saved consent timestamp), Approved Bhopal Clinics picker, Request Visit form (fixed 4 services), Visit list & Visit Detail progress tracker, Cancel Visit action.
-- **Clinic Admin (Expo Web):** Incoming visit requests queue, status filter tabs, Assign Verified Staff modal/drawer, Cancel option.
-- **Clinic Staff:** My Assigned Visits list, Visit Detail with parent address/instructions, Start Visit action (`In progress`).
+### Frontend Deliverables — ✅ Complete
+- [x] **Family screens:** Parent-first home with BP & sugar trend sparklines, Add Parent form (with explicit consent checkbox and visible saved consent timestamp), Approved Bhopal Clinics picker, Request Visit form (fixed 4 services), Visit Detail vertical 4-stage progress tracker, Cancel Visit action, and live `"Simulate visit"` button.
+- [x] **Clinic Admin (Expo Web):** Incoming visit requests queue, status filter tabs, inline Assign Verified Staff action, Cancel option.
+- [x] **Clinic Staff:** My Assigned Visits list, Visit Detail with parent address/instructions, Start Visit action (`In progress`).
 
 ### Testable Milestone (Exit Criteria)
 - Family registers a parent (rejected without consent; succeeds with saved timestamp), books a visit with an approved Bhopal clinic, Clinic Admin assigns a verified staff member, and Staff starts the visit—status updates visibly across all 3 roles.
@@ -69,10 +69,10 @@ Complete the visit report workflow (observations only), append-only report acces
 - [x] Implement `GET /api/v1/reports` (Clinic Admin's own reports), `GET /api/v1/parents/{parentId}/reports` (family parent trend reports), `GET /api/v1/reports/{reportId}/access-logs`, and `GET /api/v1/access-logs`.
 - [x] Complete security integration test suite verifying report isolation, append-only access log increments on every read, and non-diagnostic schema constraints.
 
-### Frontend Deliverables
-- **Clinic Staff:** Complete Visit & Record Observations form (BP systolic/diastolic, temperature, blood sugar + context, factual notes, follow-up/doctor consult selector, observations-only reminder).
-- **Family & Clinic Admin:** Structured Visit Report screen displaying date/time, staff member with `"Verified by <Clinic>"`, vitals observations, notes, next-step recommendation badge, non-diagnostic disclaimer, and **Report Access Log** timeline showing who viewed the report and when.
-- **Safety UI Baseline:** Add visible **`"In an emergency, call 108 or 112"`** notice on all key screens (Family Home, Request Visit, Visit Detail, Visit Report, Staff Visit View).
+### Frontend Deliverables — ✅ Complete
+- [x] **Clinic Staff:** Complete Visit & Record Observations form (BP systolic/diastolic, temperature, blood sugar + context, factual notes, follow-up/doctor consult selector, observations-only reminder).
+- [x] **Family & Clinic Admin:** Printed `ReportSlip` screen with PDF export (`expo-print` / `expo-sharing`) displaying date/time, staff member with `"Verified by <Clinic>"`, mono vitals observations, notes, next-step recommendation badge, non-diagnostic disclaimer, and **Report Access Log** ledger (`/(family)/access-logs` & `/(clinic)/access-logs`).
+- [x] **Safety UI Baseline:** Visible **`"In an emergency, call 108 or 112"`** notice on all key screens.
 
 ### Testable Milestone (Exit Criteria)
 - Assigned staff completes an `IN_PROGRESS` visit with observations -> visit becomes `COMPLETED` -> Family opens the report -> Report Access Log immediately records the Family user's name, role, and timestamp.
@@ -90,10 +90,10 @@ Apply the full visual design system from `design.md`, populate realistic Bhopal 
 - [x] Build idempotent `BhopalDemoDataSeeder` (`demo` profile / `closeby.seed.enabled=true`) creating 5 fictional Bhopal clinics (3 Approved, 1 Pending, 1 Suspended), 6 verified staff, 6 families with 12 consented parents, 40 visits over the last 60 days across all 5 statuses with realistic vitals reports, and initial report access logs.
 - [x] Configure CORS, environment-based secrets (`.env.example`), HTTPS reverse-proxy headers (`server.forward-headers-strategy`), Swagger/OpenAPI docs, and clean Flyway startup.
 
-### Frontend Deliverables
-- Apply full visual polish from `design.md` (color system, typography, spacing, empty/loading/error states, responsive Expo Web tables/dashboards for Platform Admin & Clinic Admin, memorable mobile polish for Family & Staff).
-- Build the gated **Demo Role Switcher** (`EXPO_PUBLIC_DEMO_MODE=true`) allowing instant switching between seeded Platform Admin, Clinic Admin (Narmada & Bhojpal), Clinic Staff, and Family accounts via real `/api/v1/auth/login`.
-- Polish report presentation and status timeline so the live demo looks cohesive and memorable on a projector.
+### Frontend Deliverables — ✅ Complete
+- [x] Applied full editorial visual system from `design.md` across all mobile & Expo Web screens, plus `/design-preview`.
+- [x] Built hidden **Demo Role Switcher** (long-press `closeBy` logo, gated by `EXPO_PUBLIC_DEMO_MODE`) authenticating via real `/api/v1/auth/login`, plus live **`Simulate visit`** flow on Family Home.
+- [x] Generated college submission deliverables: `README.md` with editorial screenshots (`docs/screenshots/*.svg`), Mermaid architecture & ER diagrams, and 5-minute step-by-step `DEMO_SCRIPT.md`.
 
 ### Testable Milestone (Exit Criteria)
 - Clean boot with `--spring.profiles.active=demo` seeds all Bhopal data idempotently (restarting does not duplicate rows).

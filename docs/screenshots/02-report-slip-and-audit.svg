@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620">
+  <rect width="920" height="620" fill="#F6F1E7" />
+
+  <!-- Printed Medical Observation Slip (Left) -->
+  <rect x="40" y="34" width="500" height="552" rx="14" fill="#FFFDF8" stroke="rgba(20,35,31,0.25)" />
+  <text x="64" y="64" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="rgba(20,35,31,0.5)">HOME VISIT OBSERVATION SLIP</text>
+  <text x="516" y="64" font-family="monospace" font-size="12" fill="rgba(20,35,31,0.6)" text-anchor="end">CB-BPL-2026-0418</text>
+  <text x="64" y="96" font-family="Georgia, serif" font-size="24" font-weight="600" fill="#14231F">Lakeview Homecare Clinic</text>
+  <text x="64" y="116" font-family="system-ui, sans-serif" font-size="13" fill="rgba(20,35,31,0.7)">E-4/45 Arera Colony, Bhopal · Tue, 18 Nov 2026 · 10:28 AM</text>
+  <line x1="40" y1="132" x2="540" y2="132" stroke="rgba(20,35,31,0.22)" />
+  <line x1="40" y1="136" x2="540" y2="136" stroke="rgba(20,35,31,0.22)" />
+
+  <!-- Parent & Staff Stamp -->
+  <text x="64" y="162" font-family="Georgia, serif" font-size="18" font-weight="600" fill="#14231F">Smt. Meera Sharma (68 yrs)</text>
+  <text x="516" y="162" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#14231F" text-anchor="end">Home vitals check</text>
+  <text x="64" y="184" font-family="system-ui, sans-serif" font-size="13" fill="rgba(20,35,31,0.7)">Recorded by Nurse Sunita Verma · Registered Nurse</text>
+  <rect x="64" y="196" width="234" height="24" rx="12" fill="rgba(31,77,69,0.10)" stroke="rgba(31,77,69,0.28)" />
+  <text x="181" y="212" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1F4D45" text-anchor="middle">Verified by Lakeview Homecare Clinic</text>
+  <line x1="40" y1="234" x2="540" y2="234" stroke="rgba(20,35,31,0.10)" />
+
+  <!-- Ruled Observations Table (Mono Numerals) -->
+  <text x="64" y="256" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1.1" fill="rgba(20,35,31,0.5)">MEASURED OBSERVATIONS</text>
+
+  <text x="64" y="286" font-family="system-ui, sans-serif" font-size="15" font-weight="500" fill="#14231F">Blood Pressure</text>
+  <text x="64" y="302" font-family="system-ui, sans-serif" font-size="12" fill="rgba(20,35,31,0.6)">Seated home reading</text>
+  <text x="516" y="294" font-family="monospace" font-size="20" font-weight="600" fill="#14231F" text-anchor="end">128/82 mmHg</text>
+  <line x1="64" y1="316" x2="516" y2="316" stroke="rgba(20,35,31,0.10)" />
+
+  <text x="64" y="344" font-family="system-ui, sans-serif" font-size="15" font-weight="500" fill="#14231F">Temperature</text>
+  <text x="64" y="360" font-family="system-ui, sans-serif" font-size="12" fill="rgba(20,35,31,0.6)">Digital thermometer</text>
+  <text x="516" y="352" font-family="monospace" font-size="20" font-weight="600" fill="#14231F" text-anchor="end">98.4 °F</text>
+  <line x1="64" y1="374" x2="516" y2="374" stroke="rgba(20,35,31,0.10)" />
+
+  <text x="64" y="402" font-family="system-ui, sans-serif" font-size="15" font-weight="500" fill="#14231F">Blood Sugar</text>
+  <text x="64" y="418" font-family="system-ui, sans-serif" font-size="12" fill="rgba(20,35,31,0.6)">Fasting</text>
+  <text x="516" y="410" font-family="monospace" font-size="20" font-weight="600" fill="#14231F" text-anchor="end">104 mg/dL</text>
+  <line x1="40" y1="434" x2="540" y2="434" stroke="rgba(20,35,31,0.10)" />
+
+  <!-- Staff Notes & Footer -->
+  <text x="64" y="458" font-family="system-ui, sans-serif" font-size="13" fill="rgba(20,35,31,0.8)">Parent was comfortable and alert. Morning BP tablet taken on time at 8:00 AM.</text>
+  <text x="64" y="484" font-family="system-ui, sans-serif" font-size="11" fill="rgba(20,35,31,0.6)">Observations only. Not a medical diagnosis or prescription.</text>
+  <rect x="64" y="498" width="452" height="32" rx="10" fill="rgba(196,69,45,0.10)" stroke="rgba(196,69,45,0.25)" />
+  <text x="80" y="518" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#C4452D">In an emergency, call 108 or 112</text>
+  <rect x="64" y="542" width="166" height="32" rx="12" fill="#FFFDF8" stroke="rgba(20,35,31,0.22)" />
+  <text x="147" y="562" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#14231F" text-anchor="middle">Export slip as PDF</text>
+
+  <!-- Right Column: Report Access Log Audit Ledger -->
+  <text x="568" y="58" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="rgba(20,35,31,0.5)">PRIVACY AUDIT LEDGER</text>
+  <text x="568" y="88" font-family="Georgia, serif" font-size="24" font-weight="600" fill="#14231F">Report access log</text>
+  <text x="568" y="110" font-family="system-ui, sans-serif" font-size="13" fill="rgba(20,35,31,0.7)">Appended automatically on every report view.</text>
+
+  <rect x="568" y="128" width="312" height="310" rx="14" fill="#FFFDF8" stroke="rgba(20,35,31,0.12)" />
+
+  <text x="588" y="160" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#14231F">Rohan Sharma</text>
+  <rect x="706" y="144" width="62" height="22" rx="11" fill="rgba(31,77,69,0.10)" />
+  <text x="737" y="159" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1F4D45" text-anchor="middle">Family</text>
+  <text x="588" y="182" font-family="monospace" font-size="12" fill="rgba(20,35,31,0.65)">Tue, 18 Nov · 10:48 AM (Just now)</text>
+  <line x1="588" y1="200" x2="860" y2="200" stroke="rgba(20,35,31,0.10)" />
+
+  <text x="588" y="232" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#14231F">Nikhil Srivastava</text>
+  <rect x="722" y="216" width="90" height="22" rx="11" fill="#EFE8DA" />
+  <text x="767" y="231" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="rgba(20,35,31,0.75)" text-anchor="middle">Clinic admin</text>
+  <text x="588" y="254" font-family="monospace" font-size="12" fill="rgba(20,35,31,0.65)">Tue, 18 Nov · 10:42 AM</text>
+  <line x1="588" y1="272" x2="860" y2="272" stroke="rgba(20,35,31,0.10)" />
+
+  <text x="588" y="304" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#14231F">Rohan Sharma</text>
+  <rect x="706" y="288" width="62" height="22" rx="11" fill="rgba(31,77,69,0.10)" />
+  <text x="737" y="303" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1F4D45" text-anchor="middle">Family</text>
+  <text x="588" y="326" font-family="monospace" font-size="12" fill="rgba(20,35,31,0.65)">Tue, 18 Nov · 10:34 AM</text>
+  <line x1="588" y1="344" x2="860" y2="344" stroke="rgba(20,35,31,0.10)" />
+
+  <text x="588" y="376" font-family="system-ui, sans-serif" font-size="12" fill="rgba(20,35,31,0.65)">Append-only PostgreSQL audit trail.</text>
+  <text x="588" y="396" font-family="system-ui, sans-serif" font-size="12" fill="rgba(20,35,31,0.65)">Cross-clinic &amp; cross-family reads return 403.</text>
+</svg>
