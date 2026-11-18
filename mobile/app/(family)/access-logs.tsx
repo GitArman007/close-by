@@ -1,0 +1,88 @@
+import React, { useCallback, useEffect, useState } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { auditApi } from '@/api/endpoints';
+import { AccessLogLedger, EmptyState, ScreenShell } from '@/components';
+import { errorStates, loadingStates, spacing, typography } from '@/theme';
+import type { ReportAccessLogDto } from '@/types/api';
+
+export default function FamilyAccessLogScreen() {
+  const [logs, setLogs] = useState<ReportAccessLogDto[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const loadLogs = useCallback(async (silent = false) => {
+    if (!silent) setLoading(true);
+    setError(null);
+    try {
+      const data = await auditApi.listScopedLogs();
+      setLogs(data);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : errorStates.network.body);
+    } finally {
+      setLoading(false);
+      setRefreshing(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    void loadLogs();
+  }, [loadLogs]);
+
+  const navItems = [
+    { label: 'Parent diary', href: '/(family)' },
+    { label: 'Request visit', href: '/(family)/request-visit' },
+    { label: 'Add parent', href: '/(family)/add-parent' },
+    { label: 'Access log', href: '/(family)/access-logs', active: true },
+  ];
+
+  return (
+    <ScreenShell
+      navItems={navItems}
+      showEmergencyBanner
+      refreshing={refreshing}
+      onRefresh={() => {
+        setRefreshing(true);
+        void loadLogs(true);
+      }}
+    >
+      <View style={styles.content}>
+        <View style={styles.header}>
+          <Text style={typography.kicker}>Privacy Audit Ledger</Text>
+          <Text style={typography.displayHero}>Who viewed your reports</Text>
+          <Text style={typography.bodyMuted}>
+            Every authorized family or clinic view of a parent’s observation slip
+            is logged here permanently with viewer identity, role, and UTC timestamp.
+          </Text>
+        </View>
+
+        {loading ? (
+          <EmptyState
+            mode="loading"
+            title={loadingStates.reportSlip.title}
+            body={loadingStates.reportSlip.body}
+          />
+        ) : error ? (
+          <EmptyState
+            mode="error"
+            title={errorStates.network.title}
+            body={error}
+            actionLabel={errorStates.network.actionLabel}
+            onAction={() => void loadLogs()}
+          />
+        ) : (
+          <AccessLogLedger logs={logs} />
+        )}
+      </View>
+    </ScreenShell>
+  );
+}
+
+const styles = StyleSheet.create({
+  content: {
+    gap: spacing.lg,
+  },
+  header: {
+    gap: spacing.xs,
+  },
+});
